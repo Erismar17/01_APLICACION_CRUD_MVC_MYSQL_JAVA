@@ -1,0 +1,11 @@
+.welcome{
+    text-align: center;
+}
+
+.nose{
+    position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}

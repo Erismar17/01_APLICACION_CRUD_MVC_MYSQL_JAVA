@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: fuentekanit;
+    src: url(fuentes/Kanit-Light.ttf);
+}
+.headerbackground{
+    width: 100%;
+    background-image: url(banner.svg);
+    height: 50vh;
+    background-repeat: no-repeat;
+}
+.headerlogoNequi{
+    z-index: 2;
+}
+/* Texto: Bienvenido a nequi */
+.ladoizquierdo{
+    display: flex;
+    width: 50%;
+    justify-content: start;
+    align-items: center;
+    font-family: fuentekanit;
+    color: white;
+    float: left;
+}
+.ladoizquierdo h2{
+    margin-left: 10%;
+}
+/* Botón "Más..." */
+.ladoderecho{
+    display: flex;
+    justify-content: right;
+    width: 30%;
+    float: right;
+    align-items: center;
+    height: 10vh;
+}
+/* Botones "Inicio Sesión", "Contacto", "Ayuda" */
+.centro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.centro button{
+    padding: 15px 30px;
+    margin-right: 50px;
+    background-color: #E01D29;
+    border: 0;
+    margin-top: 20px;
+    border-radius: 18px;
+    color: white;
+    font-family: fuentekanit;
+    font-size:20px;
+}
+/* Botón "Volver" */
+.ladoderecho-button{
+    padding: 15px 30px;
+    margin-right: 50px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 38px;
+    color: white;
+    font-family: fuentekanit;
+    font-size: 20px;
+}
+.volver {
+    width: 30px;
+    margin-top: 10px;
+}
+/* Formulario inicio de sesión */
+.iniciosesion {
+    position: relative;
+    font-family: fuentekanit;
+    background-color: #545454d2;
+    width: 40%;
+    border-radius: 18px;
+}
+.iniciosesion input{
+    width: 80%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 18px;
+    background: transparent;
+    margin: 15px;
+    font-family: fuentekanit;
+font-size: medium;
+}
+.iniciosesion input::placeholder{
+    color: #fff;
+    font-size: 20px;
+}
+.iniciosesion input:focus{
+    outline: 0;
+    border: 0;
+} 
+.formu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* Botón Iniciar Sesión form */
+.boton-is {
+    padding: 15px 40px;
+    border: 0;
+    background-color: #E01D29;
+    color: aliceblue;
+    font-family: fuentekanit;
+    font-size: 20px;
+    border-radius: 18px;
+}
+.boton-ingresar{
+    padding: 15px 40px;
+    border: 0;
+    background-color: #E01D29;
+    color: aliceblue;
+    font-family: fuentekanit;
+    font-size: 20px;
+    border-radius: 18px;
+}
+.padre_boton-is{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+
+    text-decoration: none;
+}
+.padre_boton-is a button{
+    cursor: pointer;
+}
+/* Botón Ingresar */
+.botonfooter{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.boton-recargar{
+    bottom: 200px;
+    left: 400px;
+    position:absolute ;
+}
+.boton-consultar{
+    bottom: 200px;
+    left: 600px;
+    position:absolute ;
+}
+.boton-retirar{
+    bottom: 200px;
+    left: 800px;
+    position:absolute ;
+}
+/* Formulario de la recarga */
+.formulario-recarga{
+    font-family: fuentekanit;
+    width: 40%;
+    border-radius: 18px;
+}
+.formulario-recarga input{
+    width: 80%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 18px;
+    margin: 15px;
+    font-family: fuentekanit;
+    font-size: medium;
+}
+.formulario-recarga input::placeholder{
+    color: #fff;
+    font-size: 20px;
+}
+.formulario-recarga{
+    width: 100%;
+    position: fixed;
+    left: 400px;
+    bottom: 80px;
+}
+.confirmar-recarga{
+    bottom: 85px;
+    right: 425px;
+    position:absolute ;
+}
+.confirmar-recarga button{
+    font-family: fuentekanit;
+    font-size: medium;
+    color: aliceblue;
+    background-color: #545454;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 18px;
+    text-decoration-line: underline;
+}
+/* Texto de la consulta */
+.texto-consulta button{
+    font-family: fuentekanit;
+    width: 400px;
+    height: 200px;
+    background-color: #545454;
+    position: fixed;
+    bottom: 150px;
+    left: 500px;
+    border-radius: 18px;
+    font-size: medium;
+    color: aliceblue;
+}
+.texto-consulta{
+    width: 100%;
+    position: fixed;
+    left: 500px;
+    bottom: 350px;
+    font-family: fuentekanit;
+}
+.cerrar-consulta{
+    bottom: 85px;
+    right: 425px;
+    position:absolute ;
+}
+.cerrar-consulta button{
+    font-family: fuentekanit;
+    font-size: medium;
+    color: aliceblue;
+    background-color: #545454;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 18px;
+    text-decoration-line: underline;
+}
+/* Formulario de retirar */
+.formulario-retiro{
+    font-family: fuentekanit;
+    width: 40%;
+    border-radius: 18px;
+}
+.formulario-retiro input{
+    width: 80%;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 18px;
+    margin: 15px;
+    font-family: fuentekanit;
+    font-size: medium;
+}
+.formulario-retiro input::placeholder{
+    color: #fff;
+    font-size: 20px;
+}
+.formulario-retiro{
+    width: 100%;
+    position: fixed;
+    left: 400px;
+    bottom: 80px;
+}
+.confirmar-retiro{
+    bottom: 85px;
+    right: 425px;
+    position:absolute ;
+}
+.confirmar-retiro button{
+    font-family: fuentekanit;
+    font-size: medium;
+    color: aliceblue;
+    background-color: #545454;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 18px;
+    text-decoration-line: underline;
+}
